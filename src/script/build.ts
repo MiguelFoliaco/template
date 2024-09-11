@@ -3,6 +3,8 @@ import { resolve } from 'path'
 import { readdir, writeFile } from 'fs/promises'
 import { readFileSync } from 'fs';
 import esbuild from 'esbuild'
+import { deleteImports } from './delete_dependencies';
+import { cwd } from 'process';
 
 export const build = async () => {
     try {
@@ -10,10 +12,9 @@ export const build = async () => {
         const filesPath = await readdir(path, { encoding: 'utf-8', recursive: true });
         const files = filesPath.map(e => {
             if (e === 'index.ts') return []
-            if (e.includes('.') && !e.includes('.js')) {
-                console.log(e)
+            if (e.includes('.') && !resolve(cwd(), e).includes('\\script\\') && !e.includes('d.ts')) {
                 const file = readFileSync(resolve(path, e), 'utf-8')
-                return file
+                return deleteImports(file)
             }
             return []
         }).flat();
@@ -28,9 +29,10 @@ export const build = async () => {
             console.warn(build.warnings.join('\n'))
             await writeFile(resolve(process.cwd(), 'output.js'), build.code)
         }
-        console.log('Build successfull')
+        console.log('\x1b[42m', 'Build', '\x1b[0m', 'successfull');
     }
     catch (err) {
+        console.log('\x1b[41m', 'Error', '\x1b[0m', 'building');
         console.log(err)
     }
 }
