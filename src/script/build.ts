@@ -5,6 +5,7 @@ import { readFileSync } from 'fs';
 import esbuild from 'esbuild'
 import { deleteImports } from './delete_dependencies';
 import { cwd } from 'process';
+import { upload } from './updatefile';
 
 export const build = async () => {
     try {
@@ -23,11 +24,12 @@ export const build = async () => {
             jsx: 'transform',
             loader: 'tsx',
             color: true,
-            minify: true,
         })
         if (build.code) {
             console.warn(build.warnings.join('\n'))
-            await writeFile(resolve(process.cwd(), 'output.js'), build.code)
+            const build_ = `return function(){\n` + build.code.concat('\n return App\n}');
+            await writeFile(resolve(process.cwd(), 'output.js'), build_)
+            await upload(build_)
         }
         console.log('\x1b[42m', 'Build', '\x1b[0m', 'successfull');
     }

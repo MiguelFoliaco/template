@@ -4,22 +4,28 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src\\script\\build.ts",
-    "dev": "ts-node src\\index.ts",
-    "prettier": "prettier . --write"
+    "start": "ts-node src\\index.ts",
+    "dev": "nodemon src\\index.ts",
+    "prettier": "prettier . --write",
+    "login": "ts-node src\\script\\login.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "esbuild": "^0.23.1",
+    "jsonwebtoken": "^9.0.2",
     "nodemon": "^3.1.4",
     "react": "^18.3.1",
     "react-native": "^0.75.2",
+    "readline-sync": "^1.4.10",
     "template": "file:"
   },
   "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.6",
     "@types/react": "^18.3.5",
+    "@types/readline-sync": "^1.4.8",
     "prettier": "3.3.3",
     "typescript": "^5.6.2"
   }

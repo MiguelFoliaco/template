@@ -1,0 +1,47 @@
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsImtpZCI6IlRKblY0NXBJcUc4MUVCYmkiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3pzZnJyeHlrZXJ3eW1qa2FpYXNwLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJkNzVhNDFmYS0zYjNiLTQzN2EtODZhZi1jZDE4NGJmZjMwNmIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzI2MjQ2NDU2LCJpYXQiOjE3MjYyNDI4NTYsImVtYWlsIjoiZm9saWFjbzE4QGdtYWlsLmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWwiOiJmb2xpYWNvMThAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6ImQ3NWE0MWZhLTNiM2ItNDM3YS04NmFmLWNkMTg0YmZmMzA2YiJ9LCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImFhbCI6ImFhbDEiLCJhbXIiOlt7Im1ldGhvZCI6InBhc3N3b3JkIiwidGltZXN0YW1wIjoxNzI2MjQyODU2fV0sInNlc3Npb25faWQiOiIxZjZjNTE3ZS0wNjIwLTQzYTktOGY5Ni0zMWU4ZDdjMmZhY2UiLCJpc19hbm9ueW1vdXMiOmZhbHNlfQ.IDpq5AZ1dbf-zbTIwmoIOFz1sw3nAtLlmQUxneWJySU",
+  "token_type": "bearer",
+  "expires_in": 3600,
+  "expires_at": 1726246456,
+  "refresh_token": "gk-4Sp1_n6XjmYKFmPeF2A",
+  "user": {
+    "id": "d75a41fa-3b3b-437a-86af-cd184bff306b",
+    "aud": "authenticated",
+    "role": "authenticated",
+    "email": "foliaco18@gmail.com",
+    "email_confirmed_at": "2024-08-10T04:04:57.915805Z",
+    "phone": "",
+    "confirmation_sent_at": "2024-08-10T04:03:28.763414Z",
+    "confirmed_at": "2024-08-10T04:04:57.915805Z",
+    "recovery_sent_at": "2024-09-12T17:39:20.538949Z",
+    "last_sign_in_at": "2024-09-13T15:54:16.952937295Z",
+    "app_metadata": { "provider": "email", "providers": ["email"] },
+    "user_metadata": {
+      "email": "foliaco18@gmail.com",
+      "email_verified": false,
+      "phone_verified": false,
+      "sub": "d75a41fa-3b3b-437a-86af-cd184bff306b"
+    },
+    "identities": [
+      {
+        "identity_id": "0643cda4-1392-4077-a8b2-24355214f4ae",
+        "id": "d75a41fa-3b3b-437a-86af-cd184bff306b",
+        "user_id": "d75a41fa-3b3b-437a-86af-cd184bff306b",
+        "identity_data": {
+          "email": "foliaco18@gmail.com",
+          "email_verified": false,
+          "phone_verified": false,
+          "sub": "d75a41fa-3b3b-437a-86af-cd184bff306b"
+        },
+        "provider": "email",
+        "last_sign_in_at": "2024-08-10T04:03:28.75308Z",
+        "created_at": "2024-08-10T04:03:28.753131Z",
+        "updated_at": "2024-08-10T04:03:28.753131Z",
+        "email": "foliaco18@gmail.com"
+      }
+    ],
+    "created_at": "2024-08-10T04:03:28.724843Z",
+    "updated_at": "2024-09-13T15:54:16.979257Z",
+    "is_anonymous": false
+  }
+}
