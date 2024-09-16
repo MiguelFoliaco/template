@@ -1,5 +1,6 @@
 import { getConfig } from "./utils/getConfig";
 import { apiUrl, key } from '../../config.json'
+import { loginWithoutEntry } from "./loginWithOutEntry";
 
 export const upload = async (js: string) => {
     console.log('\x1b[46m', 'Uploading...', '\x1b[0m');
@@ -16,19 +17,26 @@ export const upload = async (js: string) => {
             'Content-Type': 'application/json'
         }
     });
-    const data = await request.json() as( {
-        "warnings": any[],
-        "code": string,
-        "map": string
-    } & { error?: object, msg?: string })
+    if (request.headers.get('Content-Type')?.includes('application/json')) {
+        const data = await request.json() as ({
+            "warnings": any[],
+            "code": string,
+            "map": string
+        } & { error?: { name: string }, msg?: string })
 
-    if (data?.error) {
-        console.log('\x1b[41m', data?.msg, '\x1b[0m');
+        if (data?.error) {
+            console.log('\x1b[41m', data?.msg, '\x1b[0m');
+            if (data?.error?.name === "AuthApiError") {
+                loginWithoutEntry()
+                upload(js)
+            }
+        }
+        if (data?.warnings?.length > 0) {
+            console.log('\x1b[42m', 'Build Successfull', '\x1b[0m');
+        }
+        if (data.code) {
+            console.log('\x1b[43m', 'Build Successfull', '\x1b[0m');
+        }
     }
-    if (data?.warnings?.length > 0) {
-        console.log('\x1b[42m', 'Build Successfull', '\x1b[0m');
-    }
-    if (data.code) {
-        console.log('\x1b[43m', 'Build Successfull', '\x1b[0m');
-    }
+
 }

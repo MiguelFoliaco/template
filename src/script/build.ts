@@ -27,7 +27,7 @@ export const build = async () => {
         })
         if (build.code) {
             console.warn(build.warnings.join('\n'))
-            const build_ = `return function(){\n` + build.code.concat('\n return App\n}');
+            const build_ = `return function(){\n` + build.code.concat('\n return App\n}').replaceAll('export const','const');
             await writeFile(resolve(process.cwd(), 'output.js'), build_)
             await upload(build_)
         }

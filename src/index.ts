@@ -15,6 +15,5 @@ exec("npm run prettier", async (err) => {
     await build();
     clearTimeout(id);
     process.stdout.write("");
-    console.log("Sending build to server...");
   }
 });

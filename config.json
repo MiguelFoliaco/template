@@ -1,4 +1,6 @@
 {
-  "apiUrl": "https://oarfish-great-flea.ngrok-free.app/api",
-  "key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY3Rpb25zIjpbInJlYWQtcHJvamVjdCIsImNyZWF0ZS1wcm9qZWN0cyIsImRldi1jbGktcHVzaCIsImRlbGV0ZS1jb21wb25lbnRzIiwiYWRtaW4iXSwidXNlcklkIjoiZDc1YTQxZmEtM2IzYi00MzdhLTg2YWYtY2QxODRiZmYzMDZiIiwidXNlcm5hbWUiOiJmb2xpYWNvMThAZ21haWwuY29tIiwidG9rZW5JRCI6MTIsImlhdCI6MTcyNjE3NjM3NywiZXhwIjoxNzI2MjYyNzc3fQ.coY__-w4qiiLTx1tAzHnYk0fkaiTgNrz8z1o3LSwQ_Q"
+  "apiUrl": "http://192.168.1.12:3000/api",
+  "key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY3Rpb25zIjpbInJlYWQtcHJvamVjdCIsImNyZWF0ZS1wcm9qZWN0cyIsImRldi1jbGktcHVzaCIsImRlbGV0ZS1jb21wb25lbnRzIiwiYWRtaW4iXSwidXNlcklkIjoiZDc1YTQxZmEtM2IzYi00MzdhLTg2YWYtY2QxODRiZmYzMDZiIiwidXNlcm5hbWUiOiJmb2xpYWNvMThAZ21haWwuY29tIiwidG9rZW5JRCI6MTcsImlhdCI6MTcyNjI4Njc3NH0.2vPBipwJ5nfvv7GKKYGaw5Nw-m8o5X6Q-rN6R7_2GAM",
+  "projectId": 7,
+  "os_id": 3
 }
