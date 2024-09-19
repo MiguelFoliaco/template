@@ -3,6 +3,7 @@ import react from "react";
 import * as ReactNative from "react-native";
 import * as RNS from "@react-navigation/native-stack";
 import * as RNV from "@react-navigation/native";
+import * as RA0 from "react-native-auth0";
 
 const _screen = ReactNative.Dimensions.get("screen");
 declare global {
@@ -14,4 +15,5 @@ declare global {
   const StatusBar: typeof ReactNative.StatusBar;
   const ThemeProvider: typeof RNV.ThemeProvider;
   const screen: typeof _screen, window: typeof _screen;
+  const ReactNativeAuth0: typeof RA0;
 }

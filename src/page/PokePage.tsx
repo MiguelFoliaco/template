@@ -155,7 +155,7 @@ export const PokePage = (params: any) => {
                 <RN.Text
                   style={{ color: colorScheme === "dark" ? "#eee" : "#111" }}
                 >
-                  Height: {pokemon.height}m
+                  Height: {pokemon.height}m Height: {pokemon.height}m
                 </RN.Text>
               </RN.View>
               <RN.View>

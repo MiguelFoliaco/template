@@ -1,23 +1,30 @@
 return function(){
 const Stack = ReactNavigationStack.createNativeStackNavigator();
 const App = ({ colorScheme }) => {
-  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(
-    ThemeProvider,
+  return /* @__PURE__ */ React.createElement(
+    ReactNativeAuth0.Auth0Provider,
     {
-      value: colorScheme === "dark" ? ReactNavigation.DarkTheme : ReactNavigation.DefaultTheme
+      domain: "dev-tjq60n4lxydu4mez.us.auth0.com",
+      clientId: "DJKgs0GDD9iB5xWS8QN7E3VwnJ0ojvzW"
     },
-    /* @__PURE__ */ React.createElement(ProviderPokemon, null, /* @__PURE__ */ React.createElement(
-      Stack.Navigator,
+    /* @__PURE__ */ React.createElement(
+      ThemeProvider,
       {
-        initialRouteName: "/feed",
-        screenOptions: {
-          headerShown: false
-        }
+        value: colorScheme === "dark" ? ReactNavigation.DarkTheme : ReactNavigation.DefaultTheme
       },
-      /* @__PURE__ */ React.createElement(Stack.Screen, { name: "feed", component: Home }),
-      /* @__PURE__ */ React.createElement(Stack.Screen, { name: "poke-page", component: PokePage })
-    ))
-  ));
+      /* @__PURE__ */ React.createElement(ProviderPokemon, null, /* @__PURE__ */ React.createElement(
+        Stack.Navigator,
+        {
+          initialRouteName: "/feed",
+          screenOptions: {
+            headerShown: false
+          }
+        },
+        /* @__PURE__ */ React.createElement(Stack.Screen, { name: "feed", component: Home }),
+        /* @__PURE__ */ React.createElement(Stack.Screen, { name: "poke-page", component: PokePage })
+      ))
+    )
+  );
 };
 const Home = () => {
   const [textSearch, setTextSearch] = useState("");
@@ -233,6 +240,8 @@ const PokePage = (params) => {
         style: { color: colorScheme === "dark" ? "#eee" : "#111" }
       },
       "Height: ",
+      pokemon.height,
+      "m Height: ",
       pokemon.height,
       "m"
     )),
