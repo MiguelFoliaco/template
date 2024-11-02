@@ -1,8 +1,5 @@
 import React from "react";
-import { Home } from "./Home";
 import { ColorSchemeName } from "react-native";
-import { ProviderPokemon } from "./context/PokemonContext";
-import { PokePage } from "./PokePage";
 
 const Stack = ReactNavigationStack.createNativeStackNavigator();
 const App = ({ colorScheme }: { colorScheme: ColorSchemeName }) => {
@@ -18,18 +15,19 @@ const App = ({ colorScheme }: { colorScheme: ColorSchemeName }) => {
             : ReactNavigation.DefaultTheme
         }
       >
-        <ProviderPokemon>
-          <Stack.Navigator
-            initialRouteName="/feed"
-            screenOptions={{
-              headerShown: false,
-            }}
-          >
-            <Stack.Screen name="feed" component={Home} />
-            <Stack.Screen name="poke-page" component={PokePage} />
-          </Stack.Navigator>
-        </ProviderPokemon>
+        <Stack.Navigator
+          initialRouteName="/feed"
+          screenOptions={{
+            headerShown: false,
+          }}
+        >
+          <Stack.Screen name="feed" component={Home2} />
+        </Stack.Navigator>
       </ThemeProvider>
     </ReactNativeAuth0.Auth0Provider>
   );
+};
+
+const Home2 = () => {
+  return <RN.Text>Hola mundo</RN.Text>;
 };
