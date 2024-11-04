@@ -1,9 +1,9 @@
 {
-  "access_token": "eyJhbGciOiJIUzI1NiIsImtpZCI6IlRKblY0NXBJcUc4MUVCYmkiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3pzZnJyeHlrZXJ3eW1qa2FpYXNwLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJkNzVhNDFmYS0zYjNiLTQzN2EtODZhZi1jZDE4NGJmZjMwNmIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzMwNTM0ODA5LCJpYXQiOjE3MzA1MzEyMDksImVtYWlsIjoiZm9saWFjbzE4QGdtYWlsLmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWwiOiJmb2xpYWNvMThAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6ImQ3NWE0MWZhLTNiM2ItNDM3YS04NmFmLWNkMTg0YmZmMzA2YiJ9LCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImFhbCI6ImFhbDEiLCJhbXIiOlt7Im1ldGhvZCI6InBhc3N3b3JkIiwidGltZXN0YW1wIjoxNzMwNTMxMjA5fV0sInNlc3Npb25faWQiOiJlMzA3YzM3Mi04OTU1LTQ5NGUtYTM3NS0yNGYyZTliMjRlMmIiLCJpc19hbm9ueW1vdXMiOmZhbHNlfQ.2EjHxEzK47DQhh9KP-q0-SOhJI1Jc0odBPbo1TiMgWg",
+  "access_token": "eyJhbGciOiJIUzI1NiIsImtpZCI6IlRKblY0NXBJcUc4MUVCYmkiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3pzZnJyeHlrZXJ3eW1qa2FpYXNwLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJkNzVhNDFmYS0zYjNiLTQzN2EtODZhZi1jZDE4NGJmZjMwNmIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzMwNjk4MzY5LCJpYXQiOjE3MzA2OTQ3NjksImVtYWlsIjoiZm9saWFjbzE4QGdtYWlsLmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWwiOiJmb2xpYWNvMThAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6ImQ3NWE0MWZhLTNiM2ItNDM3YS04NmFmLWNkMTg0YmZmMzA2YiJ9LCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImFhbCI6ImFhbDEiLCJhbXIiOlt7Im1ldGhvZCI6InBhc3N3b3JkIiwidGltZXN0YW1wIjoxNzMwNjk0NzY5fV0sInNlc3Npb25faWQiOiI0NDcxZTM4YS00OGRiLTQzNzMtOGUzNi1iNDc5MzdjNGRmNjIiLCJpc19hbm9ueW1vdXMiOmZhbHNlfQ.9YBJcgI8Sx1wLY68PLbmk-ysrgaiSpXBWUqWf4TX7jE",
   "token_type": "bearer",
   "expires_in": 3600,
-  "expires_at": 1730534809,
-  "refresh_token": "QK1deejSPsJNBF4bYIcUUw",
+  "expires_at": 1730698369,
+  "refresh_token": "hwSOHH7Ao9_bRVjiVeC8JQ",
   "user": {
     "id": "d75a41fa-3b3b-437a-86af-cd184bff306b",
     "aud": "authenticated",
@@ -14,7 +14,7 @@
     "confirmation_sent_at": "2024-08-10T04:03:28.763414Z",
     "confirmed_at": "2024-08-10T04:04:57.915805Z",
     "recovery_sent_at": "2024-09-12T17:39:20.538949Z",
-    "last_sign_in_at": "2024-11-02T07:06:49.543160647Z",
+    "last_sign_in_at": "2024-11-04T04:32:49.918394638Z",
     "app_metadata": { "provider": "email", "providers": ["email"] },
     "user_metadata": {
       "email": "foliaco18@gmail.com",
@@ -41,7 +41,7 @@
       }
     ],
     "created_at": "2024-08-10T04:03:28.724843Z",
-    "updated_at": "2024-11-02T07:06:49.544846Z",
+    "updated_at": "2024-11-04T04:32:49.920118Z",
     "is_anonymous": false
   }
 }

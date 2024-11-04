@@ -8,6 +8,8 @@ import { cwd } from 'process';
 import { upload } from './updatefile';
 
 export const build = async () => {
+    // const socket = io(socketUrl)
+    // socket.connect()
     try {
         const path = resolve(process.cwd(), 'src')
         const filesPath = await readdir(path, { encoding: 'utf-8', recursive: true });
@@ -27,7 +29,7 @@ export const build = async () => {
         })
         if (build.code) {
             console.warn(build.warnings.join('\n'))
-            const build_ = `return function(){\n` + build.code.concat('\n return App\n}').replaceAll('export const','const');
+            const build_ = `return function(){\n` + build.code.concat('\n return App\n}').replaceAll('export const', 'const');
             await writeFile(resolve(process.cwd(), 'output.js'), build_)
             await upload(build_)
         }

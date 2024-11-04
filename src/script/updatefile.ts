@@ -1,10 +1,16 @@
+import { io } from 'socket.io-client'
 import { getConfig } from "./utils/getConfig";
-import { apiUrl, key } from '../../config.json'
+import { apiUrl, key, socketUrl } from '../../config.json'
 import { loginWithoutEntry } from "./loginWithOutEntry";
 
 export const upload = async (js: string) => {
     console.log('\x1b[46m', 'Uploading...', '\x1b[0m');
     const config = getConfig()
+
+    // const socket = io(socketUrl, {
+    //     autoConnect: true
+    // })
+    // console.log('socket ID', `${socket.id}`)
     console.log('send to ', `${apiUrl}/generate-code-dev`)
     const request = await fetch(`${apiUrl}/generate-code-dev`, {
         method: 'POST',
@@ -38,5 +44,4 @@ export const upload = async (js: string) => {
             console.log('\x1b[43m', 'Build Successfull', '\x1b[0m');
         }
     }
-
 }

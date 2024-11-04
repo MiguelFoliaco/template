@@ -3,5 +3,7 @@
     "activityBar.background": "#320d0d",
     "titleBar.activeBackground": "#461212",
     "titleBar.activeForeground": "#FCFBF2"
-  }
+  },
+  "cSpell.language": "en,es",
+  "cSpell.words": ["Pressable"]
 }
